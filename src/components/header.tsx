@@ -48,14 +48,20 @@ export default function Header() {
   };
 
   return (
-    <Material.AppBar position="fixed" color="default" elevation={1} sx={{   paddingRight: "7vw", zIndex: (theme) => theme.zIndex.drawer + 1 }}>
+    <Material.AppBar position="fixed" color="default" elevation={1} sx={{
+      backdropFilter: "blur(10px)",
+      background: "text.primary",
+      backgroundColor:"#4f4f4f41",
+      borderRadius: "0px",
+      boxShadow: 0,
+      paddingRight: "7vw", zIndex: (theme) => theme.zIndex.drawer + 1 }}>
       <Material.Container maxWidth="lg">
         <Material.Toolbar disableGutters sx={{ justifyContent: isMobile ? "space-between" : "space-between" }}>
           <Link href="/" passHref>
             <Material.Typography
-              variant="h6"
+              variant="h4"
               sx={{
-                fontWeight: 700,
+                fontWeight: 400,
                 color: "text.primary",
                 textDecoration: "none",
                 display: "flex",

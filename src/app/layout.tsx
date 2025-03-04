@@ -5,6 +5,7 @@ import { AppRouterCacheProvider } from "@mui/material-nextjs/v14-appRouter"
 import { ThemeProvider } from "@/components/theme-provider";
 import { CartProvider } from "@/components/cart-provider";
 import Header from "@/components/header";
+import Footer from "@/components/footer";
 
 
 
@@ -26,6 +27,7 @@ export default function RootLayout({
           <CartProvider>
             <Header />
             <main style={{ minHeight: "100vh", paddingTop: "64px" }}>{children}</main>
+            <Footer />
           </CartProvider>
         </ThemeProvider>
       </AppRouterCacheProvider>
