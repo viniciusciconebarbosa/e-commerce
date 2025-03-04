@@ -59,11 +59,21 @@ import {
             label="Categoria"
             onChange={(e) => setCategoryFilter(e.target.value)}
           >
-            {categories.map((category) => (
-              <MenuItem key={category} value={category}>
-                {category}
+            <MenuItem key={categories[0]} value={categories[0]}>
+                Todos
               </MenuItem>
-            ))}
+              <MenuItem key={categories[1]} value={categories[1]}>
+                Roupas masculinas
+              </MenuItem>
+              <MenuItem key={categories[2]} value={categories[2]}>
+                Joias
+              </MenuItem>
+              <MenuItem key={categories[3]} value={categories[3]}>
+                Eletronicos
+              </MenuItem>
+              <MenuItem key={categories[4]} value={categories[4]}>
+                Roupas femininas
+              </MenuItem>
           </Select>
         </FormControl>
   
