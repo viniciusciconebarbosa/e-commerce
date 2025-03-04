@@ -52,7 +52,7 @@ export function ThemeProvider({ children }: { children: React.ReactNode }) {
         main: "#9c9c9c",
       },
       secondary: {
-        main: "#0c7870",
+        main: "#13a79d",
       },
       background: {
         default: mode === "light" ? "#F9FAFC" : "#121212",
@@ -107,4 +107,5 @@ export function ThemeProvider({ children }: { children: React.ReactNode }) {
       </MUIThemeProvider>
     </ThemeContext.Provider>
   );
+
 }

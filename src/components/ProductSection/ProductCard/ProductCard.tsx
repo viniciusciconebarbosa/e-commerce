@@ -103,7 +103,8 @@ import {
   
         <CardActions>
           <Button variant="contained" sx={{ bgcolor:"#11998cea", 
-            color:"text.secondary", borderRadius: "10px"}} 
+            color:"text.secondary", borderRadius: "10px"
+          }} 
             fullWidth onClick={() => handleAddToCart(product)}>
             Adicionar
           </Button>
