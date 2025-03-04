@@ -17,20 +17,21 @@
     "@mui/material": "latest",
     "@mui/material-nextjs": "latest",
     "@mui/material-pigment-css": "latest",
-    "react": "^19.0.0",
     "@types/react": "latest",
-    "react-dom": "^19.0.0",
-    "styled-components": "latest",
+    "axios": "latest",
     "next": "15.2.1",
-    "axios": "latest"
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0",
+    "react-hook-form": "^7.54.2",
+    "styled-components": "latest"
   },
   "devDependencies": {
-    "typescript": "^5",
+    "@eslint/eslintrc": "^3",
     "@types/node": "^20",
     "@types/react": "^19",
     "@types/react-dom": "^19",
     "eslint": "^9",
     "eslint-config-next": "15.2.1",
-    "@eslint/eslintrc": "^3"
+    "typescript": "^5"
   }
 }
