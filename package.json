@@ -9,9 +9,20 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@emotion/cache": "latest",
+    "@emotion/react": "latest",
+    "@emotion/server": "latest",
+    "@emotion/styled": "latest",
+    "@mui/icons-material": "latest",
+    "@mui/material": "latest",
+    "@mui/material-nextjs": "latest",
+    "@mui/material-pigment-css": "latest",
     "react": "^19.0.0",
+    "@types/react": "latest",
     "react-dom": "^19.0.0",
-    "next": "15.2.1"
+    "styled-components": "latest",
+    "next": "15.2.1",
+    "axios": "latest"
   },
   "devDependencies": {
     "typescript": "^5",

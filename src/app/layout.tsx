@@ -1,16 +1,12 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
+import { AppRouterCacheProvider } from "@mui/material-nextjs/v14-appRouter"
+import { ThemeProvider } from "@/components/theme-provider";
+import { CartProvider } from "@/components/cart-provider";
+import Header from "@/components/header";
 
-const geistSans = Geist({
-  variable: "--font-geist-sans",
-  subsets: ["latin"],
-});
 
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
-  subsets: ["latin"],
-});
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -23,10 +19,17 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
-      <body className={`${geistSans.variable} ${geistMono.variable}`}>
-        {children}
-      </body>
-    </html>
+    <html lang="en" suppressHydrationWarning>
+    <body className={"inter.className"}>
+      <AppRouterCacheProvider>
+        <ThemeProvider>
+          <CartProvider>
+            <Header />
+            <main style={{ minHeight: "100vh", paddingTop: "64px" }}>{children}</main>
+          </CartProvider>
+        </ThemeProvider>
+      </AppRouterCacheProvider>
+    </body>
+  </html>
   );
 }
