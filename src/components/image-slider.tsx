@@ -90,8 +90,8 @@ const slides = [
     id: 4,
     image:
       "https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1920&q=80",
-    title: "Crafted with Passion",
-    description: "Every product tells a story of quality and dedication",
+    title: "Feito com Paixão e Cuidado",
+    description: "Cada produto conta uma história de qualidade e dedicação",
   },
 ];
 
@@ -127,7 +127,7 @@ export default function ImageSlider() {
   useEffect(() => {
     const interval = setInterval(() => {
       setCurrentSlide((prev) => (prev === slides.length - 1 ? 0 : prev + 1));
-    }, 3000);
+    }, 7000);
 
     return () => clearInterval(interval);
   }, []);
