@@ -17,7 +17,6 @@
     "@mui/material": "latest",
     "@mui/material-nextjs": "latest",
     "@mui/material-pigment-css": "latest",
-    "@types/react": "latest",
     "axios": "latest",
     "next": "15.2.1",
     "react": "^19.0.0",
@@ -27,8 +26,8 @@
   },
   "devDependencies": {
     "@eslint/eslintrc": "^3",
-    "@types/node": "^20",
-    "@types/react": "^19",
+    "@types/node": "^20.17.23",
+    "@types/react": "^19.0.10",
     "@types/react-dom": "^19",
     "eslint": "^9",
     "eslint-config-next": "15.2.1",
