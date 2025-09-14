@@ -1,73 +1,143 @@
-# E-commerce
-O ShopMaster é uma plataforma de e-commerce inovadora e intuitiva que visa proporcionar uma experiência de compra online perfeita para os usuários
+# 🛍️ ShopMaster - E-commerce Moderno
 
-https://e-modern-shop-vin.vercel.app/
+🖥️ [Aplicação Frontend](https://e-modern-shop-vin.vercel.app/)
 
+## Descrição do Projeto
 
+Uma plataforma de e-commerce inovadora e intuitiva, desenvolvida para proporcionar uma experiência de compra online perfeita e moderna.
 
-## Descrição
+### Funcionalidades Principais
 
-Este é um projeto de e-commerce desenvolvido com as seguintes tecnologias:
+- **Catálogo de Produtos**: Navegação intuitiva e filtros avançados
+- **Carrinho de Compras**: Gerenciamento fácil de produtos selecionados
+- **Autenticação de Usuário**: Login social e tradicional
+- **Responsividade**: Design adaptável para dispositivos móveis e desktop
+- **Tema Dinâmico**: Suporte a modo claro e escuro
 
-- **Next.js** (v15.2.1)
-- **React** (v19.0.0)
-- **React DOM** (v19.0.0)
-- **Emotion** para estilização
-- **MUI (Material-UI)** para componentes de interface
-- **Axios** para requisições HTTP
-- **React Hook Form** para gerenciamento de formulários
-- **Styled Components** para estilização com CSS-in-JS
-- **TypeScript** para tipagem estática
+### Tecnologias Utilizadas
 
-## Scripts Disponíveis
+- **Frontend**: Next.js 15.2.1
+- **Linguagem**: TypeScript
+- **Biblioteca UI**: React 19.0.0
+- **Estilização**: 
+  - Emotion
+  - Material-UI (MUI)
+  - Styled Components
+- **Gerenciamento de Formulários**: React Hook Form
+- **Requisições HTTP**: Axios
 
-No diretório do projeto, você pode executar:
+### 🛠️ Pré-requisitos
 
-### `npm run dev`
+- Node.js (v20+)
+- npm (v10+)
 
-Executa o aplicativo em modo de desenvolvimento.<br>
-Abra [http://localhost:3000](http://localhost:3000) para ver no navegador.
+### 🔧 Configuração do Ambiente
 
-### `npm run build`
+1. **Clonar o Repositório**
+```bash
+git clone https://github.com/seu-usuario/shopmaster.git
+cd shopmaster
+```
 
-Compila o aplicativo para produção na pasta `build`.<br>
+2. **Instalar Dependências**
+```bash
+npm install
+```
 
-### `npm start`
+3. **Configurar Variáveis de Ambiente**
+- Crie um arquivo `.env` na raiz do projeto
+- Use `.env.example` como referência
+- Adicione suas configurações:
+  ```
+  NEXT_PUBLIC_API_URL=sua_url_de_api
+  NEXT_PUBLIC_AUTH_SECRET=sua_chave_de_autenticacao
+  ```
 
-Inicia o servidor de produção após a construção do aplicativo.
+### 🖥️ Executando o Projeto
 
-### `npm run lint`
+**Desenvolvimento**:
+```bash
+npm run dev
+```
+- Acesse: `http://localhost:3000`
 
-Executa a verificação de linting para manter a qualidade do código.
+**Produção**:
+```bash
+npm run build
+npm start
+```
 
-## Dependências
+### 🧪 Executando Testes e Linting
 
-### Principais Dependências
+**Linting**:
+```bash
+npm run lint
+```
 
-- `@emotion/cache`: Gerenciamento de cache do Emotion
-- `@emotion/react`: Biblioteca principal do Emotion
-- `@emotion/server`: Renderização do Emotion no servidor
-- `@emotion/styled`: Estilização com Emotion
-- `@mui/icons-material`: Ícones do Material-UI
-- `@mui/material`: Componentes de interface do Material-UI
-- `axios`: Biblioteca para fazer requisições HTTP
-- `next`: Framework para aplicações React
-- `react`: Biblioteca React
-- `react-dom`: Biblioteca ReactDOM
-- `react-hook-form`: Biblioteca para gerenciamento de formulários
-- `styled-components`: Biblioteca para estilização com CSS-in-JS
+### 📦 Build
 
-### Dependências de Desenvolvimento
+```bash
+npm run build
+```
+- Arquivos de build serão gerados na pasta `build`
 
-- `@eslint/eslintrc`: Configuração do ESLint
-- `@types/node`: Tipagem do Node.js
-- `@types/react`: Tipagem do React
-- `@types/react-dom`: Tipagem do React DOM
-- `eslint`: Ferramenta de linting para JavaScript
-- `eslint-config-next`: Configuração do ESLint para Next.js
-- `typescript`: Linguagem TypeScript
+### 📁 Estrutura do Projeto
 
-## Fotos
+```
+├── src/
+│   ├── app/                    # Páginas e rotas da aplicação
+│   │   ├── about/              # Página "Sobre" do e-commerce
+│   │   ├── cart/               # Página e lógica do carrinho de compras
+│   │   ├── contact/            # Página de contato
+│   │   ├── login/              # Funcionalidades de autenticação
+│   │   │   ├── LoginCard/      # Componente de cartão de login
+│   │   │   ├── LoginForm/      # Formulário de login
+│   │   │   └── SocialAuthButtons/ # Botões de autenticação social
+│   │   └── page.tsx            # Página inicial da aplicação
+│   ├── assets/                 # Recursos estáticos como imagens
+│   ├── components/             # Componentes reutilizáveis da aplicação
+│   │   ├── cart-provider.tsx   # Provedor de contexto do carrinho
+│   │   ├── footer.tsx          # Componente de rodapé
+│   │   ├── header.tsx          # Componente de cabeçalho
+│   │   ├── ProductSection/     # Seção de produtos
+│   │   │   ├── PaginationControl/  # Controles de paginação
+│   │   │   ├── ProductCard/    # Cartão individual de produto
+│   │   │   ├── ProductFilters/ # Filtros de produtos
+│   │   │   └── ProductList/    # Lista de produtos
+│   │   └── theme-provider.tsx  # Provedor de tema da aplicação
+│   └── ...
+├── public/                     # Arquivos públicos estáticos
+└── ...
+```
+
+### 🤝 Contribuição
+
+1. Faça um fork do projeto
+2. Crie sua feature branch (`git checkout -b feature/nova-funcionalidade`)
+3. Commit suas mudanças (`git commit -m 'Adiciona nova funcionalidade'`)
+4. Push para a branch (`git push origin feature/nova-funcionalidade`)
+5. Abra um Pull Request
+
+### 📝 Licença
+
+Este projeto está sob a licença MIT. Veja o arquivo `LICENSE` para mais detalhes.
+
+### 👤 Autor
+
+[Seu Nome]
+- GitHub: [@seu-usuario](https://github.com/seu-usuario)
+- LinkedIn: [Seu Nome](https://www.linkedin.com/in/seu-perfil)
+
+### 🚨 Avisos Importantes
+
+- Certifique-se de não commitar chaves de API
+- Use variáveis de ambiente para configurações sensíveis
+- Verifique os requisitos de uso das APIs utilizadas
+
+---
+
+## 📸 Capturas de Tela
+
 
 
 
