@@ -124,9 +124,9 @@ Este projeto está sob a licença MIT. Veja o arquivo `LICENSE` para mais detalh
 
 ### 👤 Autor
 
-[Seu Nome]
-- GitHub: [@seu-usuario](https://github.com/seu-usuario)
-- LinkedIn: [Seu Nome](https://www.linkedin.com/in/seu-perfil)
+[Redes]
+- GitHub: [@viniciuscicone](https://github.com/viniciusciconebarbosa)
+- LinkedIn: [Vinicius](https://www.linkedin.com/in/seu-perfil)
 
 ### 🚨 Avisos Importantes
 
@@ -146,10 +146,6 @@ Este projeto está sob a licença MIT. Veja o arquivo `LICENSE` para mais detalh
 ## Fotos
 
 ![commerce1](https://github.com/user-attachments/assets/fa2e8fa6-f3e1-4927-92c5-67e35c55d272)
-
-![itens](https://github.com/user-attachments/assets/305c855d-31cb-4048-93cf-37ae676c6fb3)
-
-![commerce6](https://github.com/user-attachments/assets/a81ccb41-cb66-4996-813e-64cdce662dca)
 
 
 
