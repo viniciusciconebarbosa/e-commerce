@@ -1,4 +1,4 @@
-# 🛍️ ShopMaster - E-commerce Moderno
+# 🛍️ Modern Shop - E-commerce
 
 🖥️ [Aplicação Frontend](https://e-modern-shop-vin.vercel.app/)
 
